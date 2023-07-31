@@ -66,7 +66,7 @@ namespace Job_Portal.Controllers
                     string filename = Path.GetFileName(file.FileName);
                     message.Attachments.Add(new Attachment(file.InputStream, filename));
                 }
-                message.From = new MailAddress("singhved681@outlook.com");
+                message.From = new MailAddress("email@gmail.com");
                 message.Subject = Sub;
                 message.Body = Body;
                 message.IsBodyHtml = false;
@@ -75,8 +75,8 @@ namespace Job_Portal.Controllers
                 {
                     var credential = new NetworkCredential
                     {
-                        UserName = "singhved681@outlook.com",
-                        Password = "Sigh@123n"
+                        UserName = "email@gmail.com",
+                        Password = "Password"
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp-mail.outlook.com";
