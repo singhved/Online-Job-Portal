@@ -79,8 +79,8 @@ namespace Job_Portal.Controllers
                         Password = "Password"
                     };
                     smtp.Credentials = credential;
-                    smtp.Host = "smtp-mail.outlook.com";
-                    smtp.Port = 587;
+                    smtp.Host = "smtp-host.com";
+                    smtp.Port = 000;
                     smtp.EnableSsl = true;
                     smtp.Send(message);
                 }
